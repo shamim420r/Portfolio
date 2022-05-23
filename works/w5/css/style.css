@@ -1,0 +1,119 @@
+@charset "utf-8";
+/* Basic styling */
+		html, body {
+			margin: 0;
+			padding: 0;
+			background-color: #fff;
+			font-family: Georgia, Sans-Serif;
+			line-height: 1.6;
+		}
+		h1 {
+			font-weight: normal;
+			font-style: italic;
+			font-family: Georgia, serif;
+			line-height: 1.6;
+		}
+
+		.body {
+			max-width: 1000px;
+			padding: 10px;
+			margin: 0 auto;
+		}
+
+
+
+.container {
+	margin: 0 auto 0 auto;
+	max-width: 1000px;
+	padding: 0 10px;
+}
+
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+h2 {
+padding-bottom: .5em;
+border-bottom: 1px solid #716246;
+color: #716246;
+font-size: 120%;
+}
+
+
+main {
+	padding: 30px;
+}
+
+footer {
+	background: #000033;
+}
+.footer-inner {
+	padding: 20px 16px 10px 16px;
+
+}
+
+.copyright {
+	margin: 0;
+	text-align: center;
+	color: #fff;
+}
+
+/* End Basic styling */
+
+
+/* フレックスボックスレイアウトCSS */
+.item {
+  width: 280px;
+}
+.item-img {
+  padding: 0;
+}
+.item-body {
+  padding: 0;
+}
+.item-title {
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #556b2f;
+}
+.item-body p {
+  font-size: 14px;
+  color: #333;
+}
+
+.items {
+  display: flex;
+  justify-content: space-between;
+	flex-wrap: wrap;
+}
+.items .item {
+  margin: 10px
+}
+
+/* endフレックスボックスレイアウトCSS */
+
+		
+		#demo-1 {
+			position: relative; /* can either be relative, absolute or fixed. If position is not set (i.e. static), it would be set to "relative" by script */
+			overflow: hidden; /* to bound the empty top space created by inner element's top margin */
+			width: 100%;
+			min-height: 400px;
+			background-color: #999;
+		}
+		.demo-inner-content {
+			position: relative; /* if position is not set, the script will set it to 'relative'. */
+			z-index: 2; /* if z-index is not set, the script will set it to '2'. */
+			margin: 180px auto;
+			padding: 40px;
+			max-width: 600px;
+			color: #fff;
+			text-align: center;
+			font-size: 1.5em;
+		}
+		.demo-inner-content h1 {
+			font-size: 2.5em;
+			margin: 0;
+		}

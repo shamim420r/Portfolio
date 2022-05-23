@@ -1,0 +1,142 @@
+@charset "utf-8";
+
+body {
+	margin: 0;
+	font-family: sans-serif;
+	color:#252525;
+	font-size:16px;
+    background-color: gray;
+}
+.container {
+	margin: 0 auto;
+	max-width: 1000px;
+}
+
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+/* 
+<div class="container">の子要素に指定する
+*/
+
+main {
+	padding: 30px;
+}
+
+.footer-inner {
+	padding: 20px 16px 10px 16px;
+	background: #6b8e23;
+}
+
+/* ヘッダー部 */
+.header-inner {
+	padding: 10px 10px 0 10px;
+	background: #dbebc4;
+}
+.hamburger {
+	border: none;
+	width: 50px;
+	height: 50px;
+	background: url(images/hamburger.png) no-repeat;
+	background-size: contain;
+}
+
+/* ナビゲーション */
+.navbar {
+	display: none;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	background: #336600;
+}
+.navbar li a {
+	display: block;
+	padding: 10px 40px;
+	color: #fff;
+	text-decoration: none;
+	border-right:1px solid #cccccc;
+}
+.navbar li a:hover {
+	background: #669900;
+}
+
+@media only screen and (min-width: 768px) {
+	.container {
+		padding: 0 20px;
+	}
+	main {
+		padding: 20px 30px;
+		background: #f0f8ff;
+	}
+
+	/* ナビゲーション */
+	.hamburger {
+		display: none;
+	}
+	.navbar {
+		display: flex !important;
+	/* justify-content: xxx; */
+	}
+
+}
+
+/* 写真を並べるボックス */
+.item {
+  width: 280px;
+}
+
+.bigbox {
+  display: flex;
+  justify-content: space-around;
+	flex-wrap: wrap;
+}
+.bigbox .item {
+  margin: 10px
+}
+
+/* テキストや見出しのスタイル */
+
+.copyright {
+	margin: 0;
+	text-align: center;
+	color: #fff;
+}
+
+h1 {
+	margin: 0;
+	color:#336600;
+	font-size:30px;
+	padding: 35px;
+    text-align: center;
+}
+
+h2 {
+margin-top: 30px;
+margin-bottom: 20px;
+padding-bottom: 10px;
+border-bottom: 2px dashed #9fc24d;
+color: #006400;
+font-size: 120%;
+}
+
+/* google mapをレスポンシブにする */
+.ggmap {
+position: relative;
+padding-bottom: 56.25%;
+padding-top: 30px;
+height: 0;
+overflow: hidden;
+}
+ 
+.ggmap iframe,
+.ggmap object,
+.ggmap embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
